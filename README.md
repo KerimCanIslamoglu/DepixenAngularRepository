@@ -1,3 +1,8 @@
+
+# Uygulamayı Çalıştırmadan Önce!!
+node_modules klasörü çok büyük olduğu Repository içerisinde bulunmamaktadır. Uygulamayı çalıştırmadan önce komut ekranına --npm i yazdıktan sonra --ng serve yazarak uygulamayı çalıştırabilirsiniz.
+
+
 # DepixenIseAlimUygulamasi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
