@@ -1,0 +1,43 @@
+<div class="movieList1">
+
+  <div *ngFor="let movie of movies">
+    <div class="container mt-4">
+      <div class="mt-4">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="row no-gutter">
+                <div class="col-md-3">
+                  <img src="{{movie.Poster}}" alt="">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="http://localhost:4200/details/{{movie.imdbID}}">{{movie.Title}}</a>
+                    </h5>
+                    <p class="card-text"><b>Year: </b>{{movie.Year}}</p>
+                    <p class="card-text"><b>Type: </b>{{movie.Type}}</p>
+                    <p class="card-text"><b>ImdbId: </b>{{movie.imdbID}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script src="/node_modules/ngx-infinite-scroll/bundles/ngx-infinite-scroll.umd.min.js"></script>
+<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+<script>
+  $('.movieList1').infiniteScroll({
+
+    // options
+    path: '.moviesList1',
+    append: 'card',
+    status: '.scroller-status',
+    history: true,
+
+  });
+</script>
